@@ -7,14 +7,12 @@
   * 
   */
 
-
 def thereIs(list2check: List[Int], k: Int): List[Int] =  list2check match {
     case Nil => Nil
     case x :: tail => tail.flatMap{
         case element if (element+ x)==k =>List(element,x)
         case element if (element+ x)!=k => Nil
     } ++ thereIs(tail,k)
-
 }
 
 thereIs(List(10, 15, 3, 7),17)  // res8: List[Int] = List(7, 10)
