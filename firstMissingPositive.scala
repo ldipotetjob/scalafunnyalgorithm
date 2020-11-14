@@ -14,6 +14,7 @@
   *
   */
 
+val ainteger = Array(3, 4, -1, 1)
 
 def firstMissingPositive(ainteger: Array[Int]): Int = {
   if (ainteger.size > 0 ) {
